@@ -13,6 +13,8 @@ defmodule Rumbl.ConnCase do
   of the test unless the test case is marked as async.
   """
 
+
+
   use ExUnit.CaseTemplate
 
   using do
@@ -26,7 +28,7 @@ defmodule Rumbl.ConnCase do
       import Ecto.Query
 
       import Rumbl.Router.Helpers
-
+      import Rumbl.TestHelpers
       # The default endpoint for testing
       @endpoint Rumbl.Endpoint
     end
